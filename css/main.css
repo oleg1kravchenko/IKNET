@@ -59,6 +59,7 @@ input[type="submit"] {
 }
 .logo img {
 	width: 151px;
+	display: block;
 }
 .menu__list {
 	gap: 24px;
@@ -1119,6 +1120,9 @@ input[type="submit"] {
 	align-items: center;
 	justify-content: center;
 	position: absolute;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
 }
 .slick-dots li {
 	width: 11px;

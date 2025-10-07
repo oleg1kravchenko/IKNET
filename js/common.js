@@ -1,5 +1,34 @@
 $(document).ready(function () {
 
+	//прилипающие меню
+	var $menu = $(".header");
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 0 && $menu.hasClass("default")) {
+			$menu.removeClass("default").addClass("fixed");
+		} else if ($(this).scrollTop() <= 0 && $menu.hasClass("fixed")) {
+			$menu.removeClass("fixed").addClass("default");
+		}
+
+	});
+
+	if ($(this).scrollTop() > 0 && $menu.hasClass("default")) {
+		$menu.removeClass("default").addClass("fixed");
+	} else if ($(this).scrollTop() <= 0 && $menu.hasClass("fixed")) {
+		$menu.removeClass("fixed").addClass("default");
+	}
+
+	
+// плавный скролл
+$('.link-scroll').on('click', function(e) {
+  e.preventDefault();
+  
+  var targetId = $(this).attr('href');
+  
+  $('html, body').animate({
+      scrollTop: $(targetId).offset().top
+  }, 800); 
+});
+
 	/*animate*/
 	new WOW().init();
 

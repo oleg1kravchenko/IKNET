@@ -1141,7 +1141,7 @@
     .sandwich {
         width: 40px;
         height: 40px;
-        padding-top: 10px;
+        padding-top: 12px;
         display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
@@ -1228,6 +1228,7 @@
         padding-bottom: 40px;
 
     }
+    .header.fixed,
     .no-scroll .header {
         background: #3a3a3a;
     }
@@ -1308,6 +1309,28 @@
         transition: initial;
         position: relative;
     }
+
+    .slider-mobile .slick-track {
+        display: flex !important;
+    }
+    .slider-mobile .slick-slide {
+        padding: 0 10px;
+        height: inherit !important;
+    }
+    .slider-mobile .slick-list {
+        margin: 0 -10px;
+    }
+.header .wow {
+ visibility: visible !important;
+ -webkit-animation: none !important;
+ -moz-animation: none !important;
+ -o-animation: none !important;
+ -ms-animation: none !important;
+ animation: none !important;
+}
+.header.fixed {
+    padding: 10px 0;
+}
 }
 
 /* Small Devices, Tablets */
