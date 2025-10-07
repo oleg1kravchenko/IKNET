@@ -1308,6 +1308,10 @@
         display: none;
         transition: initial;
         position: relative;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
     }
 
     .slider-mobile .slick-track {
@@ -1320,17 +1324,17 @@
     .slider-mobile .slick-list {
         margin: 0 -10px;
     }
-.header .wow {
- visibility: visible !important;
- -webkit-animation: none !important;
- -moz-animation: none !important;
- -o-animation: none !important;
- -ms-animation: none !important;
- animation: none !important;
-}
-.header.fixed {
-    padding: 10px 0;
-}
+    .header .wow {
+        visibility: visible !important;
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+    .header.fixed {
+        padding: 10px 0;
+    }
 }
 
 /* Small Devices, Tablets */
