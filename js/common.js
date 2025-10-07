@@ -34,7 +34,7 @@ $(document).ready(function () {
 		{
 			if ($(window).width() < 992) {
 				$('html, body').animate({
-					scrollTop: $(targetId).offset().top - headerHeight
+					scrollTop: $(targetId).offset().top - headerHeight + 20
 				}, 800);
 			}
 		}
