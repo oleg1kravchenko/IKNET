@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/animate/animate.min.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.1" />
+	<link rel="stylesheet" href="css/media.css?ver=1.1" />
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper fadeInDown wow" data-wow-iteration="1" data-wow-delay="0.3s">
+					<a href="#" class="logo">
+						<img src="img/logo.svg" alt="alt">
+					</a>
+					<nav class="menu">
+						<ul class="menu__list">
+							<li><a href="#">Про компанія</a></li>
+							<li class="menu__haschild">
+								<a href="#">Послуги</a>
+								<div class="menu__arrow"></div>
+								<ul>
+									<li><a href="#">Инжиниринг в энергетике</a></li>
+									<li><a href="#">Присоединение объектов</a></li>
+									<li><a href="#">Направления бизнеса</a></li>
+									<li><a href="#">Подарки энергетикам</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Новини</a></li>
+							<li><a href="#">Карʼєра</a></li>
+							<li class="menu__haschild">
+								<a href="#">Проєкти</a>
+								<div class="menu__arrow"></div>
+								<ul>
+									<li><a href="#">Проекты Компании</a></li>
+									<li><a href="#">Проекты на продажу</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Контакти</a></li>
+						</ul>
+					</nav>
+					<div class="header__search">
+						<form>
+							<input type="text" placeholder="Пошук" required>
+						</form>
+					</div>
+					<div class="dropdown-main">
+						<div class="dropdown-main__value">
+							<a href="tel:+380445910873">+38 044 591 08 73</a>
+							<div class="dropdown-main__arrow"></div>
+						</div>
+						<div class="dropdown-main__dropdown">
+							<ul>
+								<li><a href="tel:+380504417020">+38 050 441-70-20</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="dropdown-main">
+						<div class="dropdown-main__value">
+							<a href="#">UA</a>
+							<div class="dropdown-main__arrow"></div>
+						</div>
+						<div class="dropdown-main__dropdown">
+							<ul>
+								<li><a href="#">RU</a></li>
+								<li><a href="#">EN</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="sandwich">
+						<div class="sw-topper"></div>
+						<div class="sw-bottom"></div>
+						<div class="sw-footer"></div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-mobile">
+				<div class="header__search">
+					<form>
+						<input type="text" placeholder="Пошук" required>
+					</form>
+				</div>
+				<nav class="menu">
+					<ul class="menu__list">
+						<li><a href="#">Про компанія</a></li>
+						<li class="menu__haschild">
+							<a href="#">Послуги</a>
+							<div class="menu__arrow"></div>
+							<ul>
+								<li><a href="#">Инжиниринг в энергетике</a></li>
+								<li><a href="#">Присоединение объектов</a></li>
+								<li><a href="#">Направления бизнеса</a></li>
+								<li><a href="#">Подарки энергетикам</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Новини</a></li>
+						<li><a href="#">Карʼєра</a></li>
+						<li class="menu__haschild">
+							<a href="#">Проєкти</a>
+							<div class="menu__arrow"></div>
+							<ul>
+								<li><a href="#">Проекты Компании</a></li>
+								<li><a href="#">Проекты на продажу</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Контакти</a></li>
+					</ul>
+				</nav>
+				<div class="menu-mobile__bottom">
+					<div class="dropdown-main">
+						<div class="dropdown-main__value">
+							<a href="tel:+380445910873">+38 044 591 08 73</a>
+							<div class="dropdown-main__arrow"></div>
+						</div>
+						<div class="dropdown-main__dropdown">
+							<ul>
+								<li><a href="tel:+380504417020">+38 050 441-70-20</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="dropdown-main">
+						<div class="dropdown-main__value">
+							<a href="#">UA</a>
+							<div class="dropdown-main__arrow"></div>
+						</div>
+						<div class="dropdown-main__dropdown">
+							<ul>
+								<li><a href="#">RU</a></li>
+								<li><a href="#">EN</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-overlay"></div>
+		</header>
+
+		<section class="billbord">
+			<div class="container fadeIn wow" data-wow-iteration="1" data-wow-delay="0.2s">
+				<h1 class="billbord__title">Установки зберігання енергії </h1>
+				<h2 class="billbord__descr">Гнучкість, ефективність та економічність для бізнесу</h2>
+				<div class="billbord__text">IKNET — інжиніринговий партнер у впровадженні УЗЕ: від розрахунків і проєктування до стабільної роботи системи та стійкості до викликів.</div>
+				<a href="#" class="btn-main">Отримати консультацію</a>
+			</div>
+		</section>
+
+		<section class="offers">
+			<div class="container">
+				<div class="head-section fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+					<h3 class="name-section">Партнерська пропозиція ІКНЕТ</h3>
+					<h2 class="title-section">З IKNET проєкти УЗЕ отримують швидку реалізацію, <br>значну економію та гнучкість в управлінні</h2>
+				</div>
+				<div class="row offers__top fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+					<div class="col-lg-6">
+						<div class="offers__head show-mob">IKNET — інжинірингова компанія з досвідом понад 14 років у складних енергетичних проєктах.</div>
+						<div class="offers__image">
+							<img src="img/offers.jpg" alt="IKNET — інжинірингова компанія з досвідом понад 14 років у складних енергетичних проєктах.">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="offers__head hidden-mob">IKNET — інжинірингова компанія з досвідом понад 14 років у складних енергетичних проєктах.</div>
+						<div class="offers__text">
+							<p>Ми беремо на себе інжиніринг і управління, щоб реалізація проходила без ризиків і з чітким результатом.</p>
+							<p>Наші рішення інтегруються з енергетичними активами замовника: генерацією (ВДЕ, КГУ тощо) та системами керування споживанням.</p>
+							<p><strong>Результат — готова система зі стабільною роботою та прозорою окупністю.</strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row row_page">
+					<div class="col-lg-6">
+						<div class="offers__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s">
+							<div class="offers__icon">
+								<img src="img/ic_offers1.svg" alt="Стратегія та підготовка">
+							</div>
+							<div class="offers__title">Стратегія та підготовка</div>
+							<p>Аналіз існуючого споживання чи генерації об’єкта з підбором оптимального режиму роботи УЗЕ</p>
+							<p>Надання інвестору готових земельних ділянок для встановлення УЗЕ або юридичний супровід оформлення нової ділянки</p>
+							<p>Розробка бізнес-плану реалізації проєкту УЗЕ</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="offers__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s">
+							<div class="offers__icon">
+								<img src="img/ic_offers2.svg" alt="Техніко-економічні розрахунки та проєктування">
+							</div>
+							<div class="offers__title">Техніко-економічні розрахунки та проєктування</div>
+							<p>ТЕО і порівняння провідних виробників УЗЕ</p>
+							<p>Підбір оптимального обладнання та організація поставок в Україну</p>
+							<p>Проєктні роботи з будівництва об’єкта й приєднання до електричних мереж</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="offers__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s">
+							<div class="offers__icon">
+								<img src="img/ic_offers3.svg" alt="Дозвільні документи та <br>юридичний супровід">
+							</div>
+							<div class="offers__title">Дозвільні документи та <br>юридичний супровід</div>
+							<p>Ліцензування, сертифікація та укладення договорів з ОСР/ОСП</p>
+							<p>Отримання дозвільних документів на будівництво об’єкта</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="offers__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s">
+							<div class="offers__icon">
+								<img src="img/ic_offers4.svg" alt="Інтеграція та реалізація">
+							</div>
+							<div class="offers__title">Інтеграція та реалізація</div>
+							<p>Послуги системного інтегратора</p>
+							<p>Виконання функцій EPC-контрактів (engineering, procurement, construction)</p>
+							<p>Повний інжиніринг і управління реалізацією проєкту</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="markets">
+			<div class="container">
+				<div class="head-section fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+					<h3 class="name-section">Ринки використання</h3>
+					<h2 class="title-section">Можливості монетизації</h2>
+				</div>
+				<div class="row row_main">
+					<div class="col-lg-4 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s">
+						<a href="#" class="item-card">
+							<span class="item-card__image">
+								<img src="img/card1.jpg" alt="Робота на ринку електроенергії">
+							</span>
+							<span class="item-card__title">Робота на ринку електроенергії</span>
+							<span class="item-card__text">Участь в регулюванні частоти та купівлі-продажу електроенергії</span>
+						</a>
+					</div>
+					<div class="col-lg-4 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s">
+						<a href="#" class="item-card">
+							<span class="item-card__image">
+								<img src="img/card2.jpg" alt="Балансування ВДЕ">
+							</span>
+							<span class="item-card__title">Балансування ВДЕ</span>
+							<span class="item-card__text">Захист від штрафів і стабільність генерації</span>
+						</a>
+					</div>
+					<div class="col-lg-4 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.7s">
+						<a href="#" class="item-card">
+							<span class="item-card__image">
+								<img src="img/card3.jpg" alt="Оптимізація витрат підприємств">
+							</span>
+							<span class="item-card__title">Оптимізація витрат підприємств</span>
+							<span class="item-card__text">Прибуток на різниці між нічними й піковими тарифами</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="cta">
+			<div class="container fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+				<h2 class="cta__title">Що ви отримуєте? </h2>
+				<div class="cta__descr">Комплексне рішення: від бізнес-плану й аналізу споживання до приєднання, інтеграції та сертифікації.</div>
+				<a href="#" class="btn-main">Отримати консультацію</a>
+			</div>
+		</section>
+
+		<section class="history">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+						<div class="history__main">
+							<div class="head-section">
+								<h3 class="name-section">Наш досвід в УЗЕ</h3>
+								<h2 class="title-section">Ми створюємо історію ринку energy storage в Україні</h2>
+							</div>
+							<div class="history__descr">IKNET був серед перших, хто вивів УЗЕ на промисловий рівень, і сьогодні масштабує технологію з передбачуваним результатом.</div>
+							<div class="history__image">
+								<img src="img/history.jpg" alt="Наш досвід в УЗЕ">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="timeline">
+							<div class="timeline__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s">
+								<div class="timeline__year">2021</div>
+								<div class="timeline__title">Перший проект з УЗЕ в Україні</div>
+								<p>Разом із провідною енергетичною компанією України реалізовано перший проєкт у сфері УЗЕ: участь у виконанні проєктних робіт</p>
+							</div>
+							<div class="timeline__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s">
+								<div class="timeline__year">2021</div>
+								<div class="timeline__title">Запуск девелоперських проектів</div>
+								<p>На підготовлених компанією ділянках будується та вже побудовано понад 200 МВт УЗЕ.</p>
+							</div>
+							<div class="timeline__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s">
+								<div class="timeline__year">2025</div>
+								<div class="timeline__title">20 МВт для <span>ОККО</span></div>
+								<p>Спільно з групою компаній ОККО реалізовано перший промисловий УЗЕ в Україні (понад 20 МВт), який отримав сертифікацію «Укренерго». </p>
+								<p>IKNET супроводжував проєкт на всіх етапах: від вибору ділянки й виконання повного комплексу проєктних робіт до отримання ліцензій, укладання договорів і проходження сертифікації.</p>
+							</div>
+							<div class="timeline__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s">
+								<div class="timeline__year">2025</div>
+								<div class="timeline__title">Понад 350 МВт реалізованих проєктів</div>
+								<p>Компанія виконує проєктні роботи для об’єктів сумарною потужністю більше 350 МВт</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="history__image show-mob">
+					<img src="img/history2.jpg" alt="Наш досвід в УЗЕ">
+				</div>
+			</div>
+		</section>
+
+		<section class="advantages">
+			<div class="container">
+				<div class="head-section fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+					<h3 class="name-section">Переваги та УТП </h3>
+					<h2 class="title-section">IKNET — це команда з досвідом, експерністю та власним підходом до впровадження УЗЕ</h2>
+					<div class="descr-section">Наші сильні сторони, які допомагають реалізовувати проекти швидко та ефективно</div>
+				</div>
+				<div class="row row_main hidden-mob">
+					<div class="col-lg-3 col-md-4 col-sm-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.2s">
+						<div class="advantages__item">
+							<div class="advantages__icon">
+								<img src="img/ic_avd1.svg" alt="Досвід «перших»">
+							</div>
+							<div class="advantages__title">Досвід «перших»</div>
+							<p>Реалізували першу промислову систему зберігання енергії в Україні (2025, з ОККО).</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.4s">
+						<div class="advantages__item">
+							<div class="advantages__icon">
+								<img src="img/ic_avd2.svg" alt="Інтеграційна експертиза">
+							</div>
+							<div class="advantages__title">Інтеграційна експертиза</div>
+							<p>Втілюємо проєкти, де УЗЕ, генерація та автоматизація працюють як єдина система.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.6s">
+						<div class="advantages__item">
+							<div class="advantages__icon">
+								<img src="img/ic_avd3.svg" alt="Повний цикл інжинірингу">
+							</div>
+							<div class="advantages__title">Повний цикл інжинірингу</div>
+							<p>Беремо на себе все: від розрахунків і ТЕО до введення в експлуатацію та оптимізації витрат.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.8s">
+						<div class="advantages__item">
+							<div class="advantages__icon">
+								<img src="img/ic_avd4.svg" alt="Адаптація під бізнес-модель">
+							</div>
+							<div class="advantages__title">Адаптація під бізнес-модель</div>
+							<p>Налаштовуємо рішення під конкретний об’єкт і економічні цілі.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="1s">
+						<div class="advantages__item">
+							<div class="advantages__icon">
+								<img src="img/ic_avd5.svg" alt="Мінімізація ризиків">
+							</div>
+							<div class="advantages__title">Мінімізація ризиків</div>
+							<p>Контролюємо технічні й фінансові ризики проєктів.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="1.2s">
+						<div class="advantages__item">
+							<div class="advantages__icon">
+								<img src="img/ic_avd6.svg" alt="Прогнозований результат">
+							</div>
+							<div class="advantages__title">Прогнозований результат</div>
+							<p>Моделюємо економіку й забезпечуємо прозору окупність.</p>
+						</div>
+					</div>
+					<div class="col-lg-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="1.4s">
+						<div class="advantages__item">
+							<div class="advantages__icon">
+								<img src="img/ic_avd7.svg" alt="Інноваційність">
+							</div>
+							<div class="advantages__title">Інноваційність</div>
+							<p>Інтегруємо сучасні технології від провідних виробників: LG, Huawei, SAFT, SUNGROW, Hitachi energy, TESLA, Ingeteam, Fluence energy.</p>
+						</div>
+					</div>
+				</div>
+				<div class="slider-mobile show-mob">
+					<div>
+						<div class="advantages__item">
+							<div class="advantages__icon">
+								<img src="img/ic_avd1.svg" alt="Досвід «перших»">
+							</div>
+							<div class="advantages__title">Досвід «перших»</div>
+							<p>Реалізували першу промислову систему зберігання енергії в Україні (2025, з ОККО).</p>
+						</div>
+					</div>
+					<div>
+						<div class="advantages__item">
+							<div class="advantages__icon">
+								<img src="img/ic_avd2.svg" alt="Інтеграційна експертиза">
+							</div>
+							<div class="advantages__title">Інтеграційна експертиза</div>
+							<p>Втілюємо проєкти, де УЗЕ, генерація та автоматизація працюють як єдина система.</p>
+						</div>
+					</div>
+					<div>
+						<div class="advantages__item">
+							<div class="advantages__icon">
+								<img src="img/ic_avd3.svg" alt="Повний цикл інжинірингу">
+							</div>
+							<div class="advantages__title">Повний цикл інжинірингу</div>
+							<p>Беремо на себе все: від розрахунків і ТЕО до введення в експлуатацію та оптимізації витрат.</p>
+						</div>
+					</div>
+					<div>
+						<div class="advantages__item">
+							<div class="advantages__icon">
+								<img src="img/ic_avd4.svg" alt="Адаптація під бізнес-модель">
+							</div>
+							<div class="advantages__title">Адаптація під бізнес-модель</div>
+							<p>Налаштовуємо рішення під конкретний об’єкт і економічні цілі.</p>
+						</div>
+					</div>
+					<div>
+						<div class="advantages__item">
+							<div class="advantages__icon">
+								<img src="img/ic_avd5.svg" alt="Мінімізація ризиків">
+							</div>
+							<div class="advantages__title">Мінімізація ризиків</div>
+							<p>Контролюємо технічні й фінансові ризики проєктів.</p>
+						</div>
+					</div>
+					<div>
+						<div class="advantages__item">
+							<div class="advantages__icon">
+								<img src="img/ic_avd6.svg" alt="Прогнозований результат">
+							</div>
+							<div class="advantages__title">Прогнозований результат</div>
+							<p>Моделюємо економіку й забезпечуємо прозору окупність.</p>
+						</div>
+					</div>
+					<div>
+						<div class="advantages__item">
+							<div class="advantages__icon">
+								<img src="img/ic_avd7.svg" alt="Інноваційність">
+							</div>
+							<div class="advantages__title">Інноваційність</div>
+							<p>Інтегруємо сучасні технології від провідних виробників: LG, Huawei, SAFT, SUNGROW, Hitachi energy, TESLA, Ingeteam, Fluence energy.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about-us">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="about-us__main fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+							<div class="head-section">
+								<h3 class="name-section">Що таке УЗЕ</h3>
+								<h2 class="title-section">Що таке УЗЕ і чому вони потрібні</h2>
+							</div>
+							<p>Установка зберігання енергії (УЗЕ) — це електроустановка, приєднана до мережі, яка накопичує енергію та віддає її у потрібний момент.</p>
+							<p>УЗЕ заряджаються, коли електроенергія найдешевша, і віддають її тоді, коли попит найвищий. Це означає менші витрати, додаткові доходи й безперервність роботи.</p>
+							<div class="about-us__info">Результат — економія, нові доходи та стабільність для бізнесу. </div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="about-us__items">
+							<div class="about-us__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s">
+								<div class="about-us__icon">
+									<img src="img/ic_about1.svg" alt="Оптимізація витрат на електроенергію.">
+								</div>
+								<p>Оптимізація витрат на електроенергію.</p>
+							</div>
+							<div class="about-us__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s">
+								<div class="about-us__icon">
+									<img src="img/ic_about2.svg" alt="Захист від штрафів за небаланси у ВДЕ.">
+								</div>
+								<p>Захист від штрафів за небаланси у ВДЕ.</p>
+							</div>
+							<div class="about-us__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.7s">
+								<div class="about-us__icon">
+									<img src="img/ic_about3.svg" alt="Додатковий дохід на ринку допоміжних послуг.">
+								</div>
+								<p>Додатковий дохід на ринку допоміжних послуг.</p>
+							</div>
+							<div class="about-us__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.9s">
+								<div class="about-us__icon">
+									<img src="img/ic_about4.svg" alt="Стійкість до відключень і енергонезалежність.">
+								</div>
+								<p>Стійкість до відключень і енергонезалежність.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="about-us__image fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+							<picture>
+								<source srcset="img/about.jpg" media="(min-width: 992px)">
+								<img src="img/about_mob.jpg" alt="Що таке УЗЕ">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="callback">
+			<div class="container">
+				<div class="callback__block fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+					<h2 class="title-section">З IKNET Ви отримаєте рішення «під ключ», яке приносить прогнозований прибуток, знижує витрати та робить бізнес енергонезалежним.</h2>
+					<a href="#" class="btn-main">Отримати консультацію</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="joining">
+			<div class="container">
+				<div class="row align-items-end">
+					<div class="col-lg-6">
+						<div class="head-section fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+							<h3 class="name-section">Приєднання до мереж</h3>
+							<h2 class="title-section">Приєднати УЗЕ до мережі разом з IKNET — просто</h2>
+							<div class="descr-section">Ми супроводжуємо підключення УЗЕ у всіх категоріях.</div>
+						</div>
+						<div class="row row_main">
+							<div class="col-md-4 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s">
+								<div class="joining__step">
+									<div class="joining__count">01</div>
+									<p>Вибір локації та визначення схеми приєднання</p>
+								</div>
+							</div>
+							<div class="col-md-4 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s">
+								<div class="joining__step">
+									<div class="joining__count">02</div>
+									<p>Отримання технічних умов приєднання </p>
+								</div>
+							</div>
+							<div class="col-md-4 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.7s">
+								<div class="joining__step">
+									<div class="joining__count">03</div>
+									<p>Підключення УЗЕ до мережі</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+						<div class="table-main">
+							<table>
+								<thead>
+									<tr>
+										<th>Категорія</th>
+										<th>Потужність</th>
+										<th>Напруга</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>А1</td>
+										<td><div class="value-td">≤ 0,15</div>  МВт</td>
+										<td>< 110 кВ</td>
+									</tr>
+									<tr>
+										<td>А2</td>
+										<td><div class="value-td">0,15 - 1</div>  МВт</td>
+										<td>< 110 кВ</td>
+									</tr>
+									<tr>
+										<td>В</td>
+										<td><div class="value-td">1 - 20</div>  МВт</td>
+										<td>< 110 кВ</td>
+									</tr>
+									<tr>
+										<td>С</td>
+										<td><div class="value-td">20 - 75</div>  МВт</td>
+										<td>< 110 кВ</td>
+									</tr>
+									<tr>
+										<td>С</td>
+										<td><div class="value-td">> 75</div>  МВт</td>
+										<td>< 110 кВ</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="parametrs">
+			<div class="container">
+				<div class="head-section fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+					<h3 class="name-section">Технічні параметри</h3>
+					<h2 class="title-section">Технічні характеристики, що визначають ефективність УЗЕ</h2>
+					<div class="descr-section">Ми підбираємо рішення так, щоб технічні характеристики напряму працювали на ефективність бізнесу. Ми не прив’язані до одного виробника й підбираємо оптимальне рішення з перевірених технологій.</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+						<div class="parametrs__text">
+							<p><i>Згідно з Законом України від 15.02.2022 № 2046-ІX та усіх чинних законодавчих актів України в сфері розвитку промислової акумуляції на даний час використовують саме це поняття:</i></p>
+							<p><strong>Установка зберігання енергії (УЗЕ)</strong> - електроустановка, де відбувається зберігання енергії.</p>
+							<p><i>Попередня назва згідно з Законом України від 15.04.2021 № 1396-ІX:</i></p>
+							<p><strong>Cистема накопичення енергії (СНЕ)</strong> – електроустановка, що включає обладнання для зберігання енергії, інженерні споруди, обладнання для перетворення енергії та пов’язане з ними допоміжне обладнання, яка приєднана до системи передачі або системи розподілу електричної енергії або мереж електростанції, або мереж споживача з метою відбору електричної енергії, накопичення, перетворення та зберігання енергії, а також подальшого відпуску електричної енергії в систему передачі або розподілу електричної енергії або в мережі електростанції, або в мережі споживача.</p>
+							<p>Поняття Battery Energy Storage System (ВЕSS) або Energy Storage використовується в європейських країнах та відповідає УЗЕ. </p>
+						</div>
+					</div>
+					<div class="col-lg-6 order-mob">
+						<div class="parametrs__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s">
+							<div class="parametrs__value">Ємність (кВт·год / МВт·год)</div>
+							<p>скільки енергії можна накопичити й віддати</p>
+						</div>
+						<div class="parametrs__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s">
+							<div class="parametrs__value">Напруга</div>
+							<p>робочий рівень приєднання до мережі</p>
+						</div>
+						<div class="parametrs__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.7s">
+							<div class="parametrs__value">Глибина розряду (DoD)</div>
+							<p>допустимий відсоток використання без втрати ресурсу</p>
+						</div>
+						<div class="parametrs__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.9s">
+							<div class="parametrs__value">Термін служби</div>
+							<p>кількість циклів заряду-розряду</p>
+						</div>
+						<div class="parametrs__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="1.1s">
+							<div class="parametrs__value">Швидкість відгуку</div>
+							<p>миттєва реакція на потреби ринку</p>
+						</div>
+						<div class="parametrs__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="1.3s">
+							<div class="parametrs__value">Температурний діапазон</div>
+							<p>стабільна робота в українських умовах</p>
+						</div>
+						<div class="parametrs__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="1.5s">
+							<div class="parametrs__value">Саморозряд</div>
+							<p>втрати енергії під час зберігання</p>
+						</div>
+						<div class="parametrs__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="1.7s">
+							<div class="parametrs__value">Габарити та вага</div>
+							<p>впливають на вибір майданчика</p>
+						</div>
+						<div class="parametrs__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="1.9s">
+							<div class="parametrs__value">Струм заряду</div>
+							<p>визначає швидкість заряджання</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="partners">
+			<div class="container">
+				<div class="head-section fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+					<h3 class="name-section">Виробники, з якими ми працюємо</h3>
+					<h2 class="title-section">Світові технології, адаптовані для України</h2>
+					<div class="descr-section">IKNET інтегрує рішення лише перевірених компаній — лідерів ринку energy storage</div>
+				</div>
+				<div class="partners__wrap zoomIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+					<div class="partners__line">
+						<div class="partners__item">
+							<img src="img/partner1.svg" alt="alt">
+						</div>
+						<div class="partners__item">
+							<img src="img/partner2.svg" alt="alt">
+						</div>
+						<div class="partners__item">
+							<img src="img/partner3.svg" alt="alt">
+						</div>
+						<div class="partners__item">
+							<img src="img/partner4.svg" alt="alt">
+						</div>
+						<div class="partners__item">
+							<img src="img/partner5.svg" alt="alt">
+						</div>
+						<div class="partners__item">
+							<img src="img/partner6.svg" alt="alt">
+						</div>
+					</div>
+					<div class="partners__line">
+						<div class="partners__item">
+							<img src="img/partner7.svg" alt="alt">
+						</div>
+						<div class="partners__item">
+							<img src="img/partner8.svg" alt="alt">
+						</div>
+						<div class="partners__item">
+							<img src="img/partner9.svg" alt="alt">
+						</div>
+						<div class="partners__item">
+							<img src="img/partner10.svg" alt="alt">
+						</div>
+					</div>
+					<div class="partners__line">
+						<div class="partners__item">
+							<img src="img/partner11.svg" alt="alt">
+						</div>
+						<div class="partners__item">
+							<img src="img/partner12.svg" alt="alt">
+						</div>
+						<div class="partners__item">
+							<img src="img/partner13.svg" alt="alt">
+						</div>
+						<div class="partners__item">
+							<img src="img/partner14.svg" alt="alt">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="chief">
+			<div class="container">
+				<div class="chief__block">
+					<div class="row align-items-center">
+						<div class="col-lg-6 fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+							<div class="chief__image">
+								<img src="img/chief.jpg" alt="Юрій Подоляк">
+							</div>
+						</div>
+						<div class="col-lg-6 fadeIn wow" data-wow-iteration="1" data-wow-delay="0.5s">
+							<div class="chief__content">
+								<div class="chief__title">Ми знаємо, як працює енергетика зсередини. </div>
+								<p><strong>Наш підхід — це інжиніринг</strong>, у якому немає випадковостей: від першого розрахунку до запуску системи ми відповідаємо за кожен крок.</p>
+								<h3 class="chief__subtitle">Генеральний директор IKNET</h3>
+								<div class="chief__bottom">
+									<h2 class="chief__name">Юрій Подоляк</h2>
+									<div class="chief__logo">
+										<img src="img/chief_logo.svg" alt="iknet">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="numbers">
+			<div class="container">
+				<div class="row row_main">
+					<div class="col-lg-4 col-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s">
+						<div class="numbers__item">
+							<h3 class="numbers__value">80+</h3>
+							<p>технічних due diligence для енергетичних проєктів</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-12 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s">
+						<div class="numbers__item">
+							<div class="numbers__value">540+ проєктів</div>
+							<p>у традиційній та відновлюваній енергетиці</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.7s">
+						<div class="numbers__item">
+							<h3 class="numbers__value">6 000+ МВт</h3>
+							<p>реалізували приєднання об’єктів до зовнішніх електричних мереж</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.9s">
+						<div class="numbers__item">
+							<h3 class="numbers__value">20+ МВт</h3>
+							<p>Спільно з групою ОККО реалізували перший промисловий УЗЕ в Україні</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-6 hidden-mob fadeInUp wow" data-wow-iteration="1" data-wow-delay="1.1s">
+						<div class="numbers__item">
+							<div class="numbers__image">
+								<img src="img/numbers.jpg" alt="alt">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="1.3s">
+						<div class="numbers__item">
+							<h3 class="numbers__value">1 000+ МВт</h3>
+							<p>прогнозуємо виробіток електроенергії для об’єктів такої потужності</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="consultation">
+			<div class="container">
+				<div class="head-section fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+					<h2 class="title-section">Готові інвестувати в енергетику майбутнього?</h2>
+					<div class="descr-section">Ми допоможемо пройти шлях від ідеї до запуску УЗЕ. Ви отримаєте рішення «під ключ», яке приносить прогнозований прибуток, знижує витрати та робить бізнес енергонезалежним.</div>
+				</div>
+				<div class="consultation__form fadeIn wow" data-wow-iteration="1" data-wow-delay="0.5s">
+					<form>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="item-form">
+									<input type="text" placeholder="Імʼя" required>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="item-form">
+									<input type="tel" placeholder="Номер телефону" class="input-phone" inputmode="numeric" required>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="item-form">
+									<input type="email" placeholder="Email" inputmode="email" required>
+								</div>
+							</div>
+						</div>
+						<button class="btn-main" type="submit">Замовити консультацію</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+				<div class="row">
+					<div class="col-lg-3">
+						<a href="#" class="footer__logo">
+							<img src="img/logo.svg" alt="iknet">
+						</a>
+						<div class="footer__descr">ІКНЕТ – експерт в реалізації проектів альтернативної та традиційної енергетики</div>
+						<a href="#" class="footer__link">Докладніше →</a>
+					</div>
+					<div class="col-lg-3 col-6">
+						<div class="footer__title">Карта сайту</div>
+						<nav>
+							<ul class="footer__nav">
+								<li><a href="#">Інжиніринг в енергетиці</a></li>
+								<li><a href="#">Приєднання об’єктів</a></li>
+								<li><a href="#">Напрямки бізнесу</a></li>
+								<li><a href="#">Новини</a></li>
+								<li><a href="#">Проєкти</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-lg-3 col-6">
+						<div class="footer__title">Послуги</div>
+						<nav>
+							<ul class="footer__nav">
+								<li><a href="#">Управління проєктами в енергетиці</a></li>
+								<li><a href="#">Приєднання об’єктів</a></li>
+								<li><a href="#">Напрямки бізнесу</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-lg-3">
+						<div class="footer__title">Контакти</div>
+						<div class="footer__location">03113, Україна, м. Київ вул. <br>Грушецька 9А, оф. 102</div>
+						<div class="footer__contact">Тел: <a href="tel:+380445910873">+38 (044) 591-08-73</a></div>
+						<div class="footer__contact">Тел: <a href="tel:+380504417020">+38 (050) 441-70-20</a></div>
+						<a href="#" class="btn-main">Замовити дзвінок</a>
+					</div>
+				</div>
+				<ul class="socials-list">
+					<li><a href="#" target="_blank"><img src="img/xtwitter.svg" alt="xtwitter"></a></li>
+					<li><a href="#" target="_blank"><img src="img/telegram.svg" alt="telegram"></a></li>
+					<li><a href="#" target="_blank"><img src="img/facebook.svg" alt="facebook"></a></li>
+					<li><a href="#" target="_blank"><img src="img/youtube.svg" alt="youtube"></a></li>
+					<li><a href="#" target="_blank"><img src="img/linkedin.svg" alt="linkedin"></a></li>
+				</ul>
+				<div class="footer__copyright">© 2012-2025. ТОВ "ІКНЕТ". Всі права захищені, копіювання матеріалів тільки з вказанням зворотнього посилання.</div>
+			</div>
+		</footer>
+		
+	</div>
+
+
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+	<script src="libs/animate/wow.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/mask/jquery.maskedinput.js"></script>
+	<script src="js/common.js?ver=1.1"></script>
+</body>
+</html>
