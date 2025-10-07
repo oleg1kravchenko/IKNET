@@ -17,17 +17,28 @@ $(document).ready(function () {
 		$menu.removeClass("fixed").addClass("default");
 	}
 
-	
-// плавный скролл
-$('.link-scroll').on('click', function(e) {
-  e.preventDefault();
-  
-  var targetId = $(this).attr('href');
-  
-  $('html, body').animate({
-      scrollTop: $(targetId).offset().top
-  }, 800); 
-});
+
+	// плавный скролл
+	$('.link-scroll').on('click', function (e) {
+		e.preventDefault();
+
+		var targetId = $(this).attr('href');
+		var headerHeight = $('.header').outerHeight();
+		{
+			if ($(window).width() > 992) {
+				$('html, body').animate({
+					scrollTop: $(targetId).offset().top
+				}, 800);
+			}
+		}
+		{
+			if ($(window).width() < 992) {
+				$('html, body').animate({
+					scrollTop: $(targetId).offset().top - headerHeight
+				}, 800);
+			}
+		}
+	});
 
 	/*animate*/
 	new WOW().init();
