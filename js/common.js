@@ -110,7 +110,7 @@ $(document).ready(function () {
 		nextArrow: '<div class="slick-next slick-arrow"><div/>',
 	});
 
-	$(".input-phone").mask("+7 (999) 999-99-99");
+	$(".input-phone").mask("+380 (99) 999-99-99");
 
 
 	objectFitImages();
