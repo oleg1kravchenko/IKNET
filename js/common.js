@@ -17,6 +17,33 @@ $(document).ready(function () {
 		$menu.removeClass("fixed").addClass("default");
 	}
 
+	//spinecrement
+		if ($('.numbers__item').length > 0) {
+		var showPractice = true;
+		var countboxPractice = ".numbers";
+
+		$(window).on("scroll load resize", function () {
+			if (!showPractice) return false;
+
+			var w_top = $(window).scrollTop();
+			var e_top = $(countboxPractice).offset().top - 300;
+			var w_height = $(window).height();
+			var d_height = $(document).height();
+			var e_height = $(countboxPractice).outerHeight();
+
+			if (w_top  >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+				setTimeout(() => {
+					$('.numbers__value span').css('opacity', '1').spincrement({
+						from: 0,
+						thousandSeparator: " ",
+						duration: 1000
+					});
+
+					showPractice = false;
+				}, 500);
+			}
+		});
+	}
 
 	// плавный скролл
 	$('.link-scroll').on('click', function (e) {

@@ -778,6 +778,7 @@
 
     .cta {
         padding: 67px 0;
+        background-attachment: initial;
     }
     .cta__descr {
         font-size: 18px;

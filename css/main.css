@@ -456,11 +456,12 @@ input[type="submit"] {
 	padding: 126px 0;
 	text-align: center;
 	color: #fff;
-	background-image: url(../img/bg_cta.jpg);
+	background-image: url(../img/bg_cta2.jpg);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center center;
 	background-size: cover;
 	position: relative;
+	background-attachment: fixed;
 	z-index: 2;
 	font-family: "Montserrat";
 }
@@ -1031,6 +1032,7 @@ input[type="submit"] {
 	background: #3a3a3a;
 	color: #fff;
 	max-width: 100% !important;
+	overflow: hidden;
 }
 .footer__title {
 	font-size: 20px;
