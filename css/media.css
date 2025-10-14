@@ -713,12 +713,15 @@
     }
 
     .billbord {
-        padding-top: 71px;
+        padding-top: 85px;
         padding-bottom: 25px;
         min-height: initial;
     }
     .billbord__title {
         font-size: 26px;
+        max-width: 340px;
+        margin-left: auto;
+        margin-right: auto;
         line-height: 130%;
     }
     .cta__title {
@@ -1517,7 +1520,7 @@
     .btn-main:active {
         background: #00a00b;
     }
-    .parametrs__item:hover {
+    .parametrs__item:active {
         color: #fff;
     }
     .footer__nav a:active,
