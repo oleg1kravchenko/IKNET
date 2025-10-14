@@ -67,6 +67,36 @@ $(document).ready(function () {
 		}
 	});
 
+		//search
+		$(".open-search").click(function () {
+			if ($(".search-wrap").hasClass("active")) {
+				$(".search-wrap").removeClass("active");
+			} else {
+				$(".search-wrap").addClass("active");
+				$(".search-wrap").find("input[type='text']").focus();
+			}
+		});
+	
+		$(document).mouseup(function (e) {
+			var container = $(".search-wrap");
+			if (container.has(e.target).length === 0) {
+				$(".search-wrap").removeClass("active");
+			}
+		});
+
+		//more parametrs
+		$(".parametrs__more .link-main").click(function (e) {
+			e.preventDefault();
+			$(".parametrs__more").remove();
+			if ($(".parametrs__wrapper").hasClass("active")) {
+				$(".parametrs__wrapper").removeClass("active");
+			} else {
+				$(".parametrs__wrapper").addClass("active");
+			}
+		});
+	
+	
+
 	/*animate*/
 	new WOW().init();
 
