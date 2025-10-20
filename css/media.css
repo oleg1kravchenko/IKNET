@@ -194,7 +194,7 @@
     }
 
     .about-us {
-        padding: 120px 0;
+        padding-top: 120px;
     }
     .about-us__item {
         padding: 26px 14px;
@@ -215,6 +215,7 @@
         margin-top: 22px;
     }
     .about-us__main {
+        font-size: 16px;
         margin-right: 55px;
     }
     .about-us .head-section {
@@ -288,12 +289,6 @@
 
     .partners {
         padding-bottom: 120px;
-    }
-    .partners__line {
-        margin-bottom: 50px;
-    }
-    .partners__item img {
-        max-height: 35px;
     }
 
     .chief {
@@ -413,6 +408,21 @@
     .footer .animation {
 	margin-bottom: 50px;
     }
+    .billbord__content {
+    max-width: 775px;
+    }
+    .news .item-card__title {
+    margin-bottom: 23px;
+}
+.news {
+    padding-bottom: 120px;
+}
+.news .head-section {
+    padding-bottom: 30px;
+}
+.news {
+    padding-bottom: 100px;
+}
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -550,7 +560,7 @@
     }
 
     .about-us {
-        padding: 100px 0;
+        padding-top: 100px;
     }
     .about-us__item {
         padding: 21px 11px;
@@ -633,7 +643,7 @@
         max-height: 29px;
     }
     .partners__line {
-        margin-bottom: 35px;
+                gap: 55px;
     }
     .partners {
         padding-bottom: 100px;
@@ -906,7 +916,6 @@
 
     .about-us {
         padding-top: 60px;
-        padding-bottom: 32px;
     }
     .about-us__main {
         font-size: 16px;
@@ -1052,19 +1061,13 @@
     .partners__item img {
         max-height: 20px;
     }
-    .partners__line:nth-child(1),
-    .partners__line:nth-child(2),
-    .partners__line:nth-child(3) {
-        padding: 0;
-    }
     .partners__line {
         gap: 32px 24px;
-        margin-bottom: 32px;
         flex-wrap: wrap;
         justify-content: center;
     }
     .partners__wrap {
-        max-width: 300px;
+        max-width: 335px;
         margin: 0 auto;
     }
 
@@ -1457,6 +1460,23 @@
     }
     .parametrs__wrapper.active::after {
         display: none;
+    }
+    .slider-news {
+        padding-bottom: 32px;
+    }
+    .news__button .btn-main {
+        width: 202px;
+        height: 49px;
+        font-size: 12px;
+    }
+    .news {
+        padding-bottom: 60px;
+    }
+    .news .head-section {
+        padding-bottom: 20px;
+    }
+    .news .item-card__title {
+        margin-bottom: 11px;
     }
 }
 

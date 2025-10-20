@@ -167,6 +167,17 @@ $(document).ready(function () {
 		nextArrow: '<div class="slick-next slick-arrow"><div/>',
 	});
 
+	$('.slider-news').slick({
+		arrows: false,
+		dots: true,
+		infinite: true,
+		touchThreshold: 1000,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><div/>',
+	});
+
 	$(".input-phone").mask("+380 (99) 999-99-99");
 
 
