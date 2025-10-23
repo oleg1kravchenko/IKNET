@@ -48,7 +48,7 @@ img {
 
 
 .header {
-	top: 45px;
+	top: 40px;
 	position: absolute;
 	left: 0;
 	width: 100%;
@@ -133,6 +133,38 @@ img {
 .menu__list li ul li:last-child {
 	margin-bottom: 0;
 }
+.phone-main {
+	gap: 6px;
+	color: #282B29;
+	display: inline-flex;
+	align-items: center;
+	text-decoration: none;
+	font-weight: 600;
+}
+.phone-main img {
+	display: block;
+}
+.header__wrapper .phone-main {
+	margin-left: -30px;
+}
+.header__wrapper .socials-main {
+	margin-right: 15px;
+}
+.socials-main li {
+	list-style-type: none;
+}
+.socials-main {
+	gap: 6px;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+}
+.socials-main img {
+	width: 16px;
+	height: auto;
+	display: block;
+}
 .header__search input {
 	height: 45px;
 	padding-left: 54px;
@@ -216,7 +248,7 @@ img {
 	transition: all 0.3s;
 }
 .search-wrap.active .header__search {
-	width: 300px;
+	width: 411px;
 }
 .header__right {
 	gap: 22px;
@@ -1064,7 +1096,6 @@ img {
 
 .consultation {
 	padding: 73px 0;
-	background: #C6FF80;
 	position: relative;
 	z-index: 3;
 }
@@ -1584,7 +1615,7 @@ footer .animation .footer_city .light_window.n4 {
 	position: relative;
 	top: -1px;
 	z-index: 2;
-	background-color: #C6FF80;
+	background-color: #fff;
 }
 .item-card .link-main {
 	font-weight: 600;

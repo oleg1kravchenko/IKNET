@@ -15,11 +15,11 @@
         background-position: center left 10px;
     }
     .open-search {
-	width: 42px;
-	height: 42px;
+        width: 42px;
+        height: 42px;
     }
     .menu__list>li {
-        gap: 3px; 
+        gap: 3px;
     }
     .dropdown-main__arrow,
     .menu__arrow {
@@ -74,13 +74,13 @@
         padding-top: 56px;
     }
     .info-about {
-    font-size: 16px;
-    padding: 26px;
-    max-width: 705px;
+        font-size: 16px;
+        padding: 26px;
+        max-width: 705px;
     }
     .offers__right {
-    padding-left: 18px;
-}
+        padding-left: 18px;
+    }
     .offers__head {
         padding: 23px;
         font-size: 16px;
@@ -349,18 +349,18 @@
         font-size: 14px;
     }
     .item-form__descr {
-    font-size: 11px;
-    left: 115px;
+        font-size: 11px;
+        left: 115px;
     }
     .item-form_capacity .item-form__descr {
-    left: 90px;
-}
-.item-form_power input {
-	padding-right: 104px;
-}
-.item-form_capacity input {
-	padding-right: 125px;
-}
+        left: 90px;
+    }
+    .item-form_power input {
+        padding-right: 104px;
+    }
+    .item-form_capacity input {
+        padding-right: 125px;
+    }
     .item-form_power input {
         padding-right: 103px;
     }
@@ -406,23 +406,32 @@
         max-width: 440px;
     }
     .footer .animation {
-	margin-bottom: 50px;
+        margin-bottom: 50px;
     }
     .billbord__content {
-    max-width: 775px;
+        max-width: 775px;
     }
     .news .item-card__title {
-    margin-bottom: 23px;
-}
-.news {
-    padding-bottom: 120px;
-}
-.news .head-section {
-    padding-bottom: 30px;
-}
-.news {
-    padding-bottom: 100px;
-}
+        margin-bottom: 23px;
+    }
+    .news {
+        padding-bottom: 120px;
+    }
+    .news .head-section {
+        padding-bottom: 30px;
+    }
+    .news {
+        padding-bottom: 100px;
+    }
+    .header__wrapper .phone-main {
+        margin-left: -15px;
+    }
+    .header__wrapper .socials-main {
+        margin-right: 5px;
+    }
+    .header__right {
+        gap: 16px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -438,8 +447,8 @@
         background-position: center left 7px;
     }
     .open-search {
-	width: 36px;
-	height: 36px;
+        width: 36px;
+        height: 36px;
     }
     .open-search::after, .open-search::before {
         background-size: 18px auto;
@@ -643,7 +652,7 @@
         max-height: 29px;
     }
     .partners__line {
-                gap: 55px;
+        gap: 55px;
     }
     .partners {
         padding-bottom: 100px;
@@ -697,6 +706,15 @@
     }
     .consultation .head-section {
         padding-bottom: 23px;
+    }
+    .menu__list {
+        gap: 13px;
+    }
+    .header__right {
+        gap: 9px;
+    }
+    .header__wrapper .phone-main {
+        margin-left: 0;
     }
 }
 
@@ -1161,7 +1179,7 @@
     }
 
     .footer {
-       padding-bottom: 50px;
+        padding-bottom: 50px;
     }
     .footer__logo img {
         width: 120px;
@@ -1348,6 +1366,7 @@
     .menu-mobile__bottom {
         display: grid;
         padding-top: 15px;
+        gap: 10px 0;
         grid-template-columns: 1.5fr 1fr;
     }
     .menu__list li ul::before {
@@ -1478,6 +1497,21 @@
     .news .item-card__title {
         margin-bottom: 11px;
     }
+    .header__wrapper .phone-main {
+        width: 40px;
+        height: 40px;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header__wrapper .phone-main img {
+        width: 20px;
+        height: auto;
+    }
+    .header__wrapper .socials-main {
+        display: none;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -1522,14 +1556,17 @@
     .footer__nav a:hover {
         border-color: #fff;
     }
-     .menu__list a:hover {
+    .menu__list a:hover {
         border-color: #282B29;
-     }
+    }
     .footer__link:hover {
         border-color: #00B10C;
     }
     .link-main:hover {
         border-color: transparent;
+    }
+    .socials-main a:hover img {
+        opacity: 0.8;
     }
 }
 
@@ -1547,13 +1584,16 @@
     .menu__list a:active {
         border-color: #fff;
     }
-     .menu__list a:active {
+    .menu__list a:active {
         border-color: #282B29;
-     }
+    }
     .footer__link:active {
         border-color: #00B10C;
     }
     .link-main:active {
         border-color: transparent;
+    }
+    .socials-main a:active img {
+        opacity: 0.8;
     }
 }
