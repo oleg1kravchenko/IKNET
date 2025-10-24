@@ -16,7 +16,7 @@
     }
     .open-search {
         width: 42px;
-        height: 42px;
+        height: 42px; 
     }
     .menu__list>li {
         gap: 3px;
