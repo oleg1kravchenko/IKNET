@@ -1514,7 +1514,6 @@
     .chief__wrap,
     .grid-main,
     .history__wrap,
-    .parametrs__grid,
     .joining__steps {
         display: block;
     }
@@ -1523,6 +1522,9 @@
     }
     .joining__steps>div:last-child {
         margin-bottom: 0;
+    }
+    .parametrs__grid {
+        grid-template-columns: 1fr;
     }
     .numbers__wrap {
         gap: 20px 8px;
