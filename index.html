@@ -7,17 +7,15 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
-	<title>Заголовок</title>
+	<title>Установки зберігання енергії</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="format-detection" content="telephone=no" />
 	<link rel="shortcut icon" href="favicon.png" />
-	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
-	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
-	<link rel="stylesheet" href="libs/animate/animate.min.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.min.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.9" />
-	<link rel="stylesheet" href="css/media.css?ver=1.9" />
+	<link rel="stylesheet" href="css/main.css?ver=1.10" />
+	<link rel="stylesheet" href="css/media.css?ver=1.10" />
 </head>
 <body>
 
@@ -174,7 +172,7 @@
 					muted
 					loop
 					preload="auto"
-					poster="img/billbord1.jpg"
+					poster="img/billbord.webp"
 					width="100%"
 					height="auto"
 					>
@@ -189,14 +187,18 @@
 				<div class="head-section fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.3s">
 					<h2 class="title-section">З IKNET проєкти УЗЕ отримують швидку реалізацію, <br>значну економію та гнучкість в управлінні</h2>
 				</div>
-				<div class="row offers__top">
-					<div class="col-lg-6">
+				<div class="offers__top">
+					<div>
 						<div class="offers__head show-mob fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.3s">IKNET — інжинірингова компанія з досвідом понад 14 років у складних енергетичних проєктах.</div>
 						<div class="offers__image fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.3s">
-							<img src="img/offers.jpg" alt="IKNET — інжинірингова компанія з досвідом понад 14 років у складних енергетичних проєктах.">
+							<picture>
+								<source srcset="img/offers.avif" type="image/avif">
+								<source srcset="img/offers.webp" type="image/webp">
+								<img src="img/offers.jpg" alt="IKNET — інжинірингова компанія з досвідом понад 14 років у складних енергетичних проєктах." width="709" height="375" loading="lazy">
+							</picture>
 						</div>
 					</div>
-					<div class="col-lg-6">
+					<div>
 						<div class="offers__right">
 							<div class="offers__head hidden-mob fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.6s" data-wow-duration="1.3s">IKNET — інжинірингова компанія з досвідом понад 14 років у складних енергетичних проєктах.</div>
 							<div class="offers__text fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.8s" data-wow-duration="1.3s">
@@ -207,49 +209,41 @@
 						</div>
 					</div>
 				</div>
-				<div class="row row_page">
-					<div class="col-lg-6">
-						<div class="offers__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.3s">
-							<div class="offers__icon">
-								<img src="img/ic_offers1.svg" alt="Стратегія та підготовка">
-							</div>
-							<div class="offers__title">Стратегія та підготовка</div>
-							<p>Аналіз існуючого споживання чи генерації об’єкта з підбором оптимального режиму роботи УЗЕ</p>
-							<p>Надання інвестору готових земельних ділянок для встановлення УЗЕ або юридичний супровід оформлення нової ділянки</p>
-							<p>Розробка бізнес-плану реалізації проєкту УЗЕ</p>
+				<div class="offers__grid">
+					<div class="offers__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.3s">
+						<div class="offers__icon">
+							<img src="img/ic_offers1.svg" alt="Стратегія та підготовка">
 						</div>
+						<div class="offers__title">Стратегія та підготовка</div>
+						<p>Аналіз існуючого споживання чи генерації об’єкта з підбором оптимального режиму роботи УЗЕ</p>
+						<p>Надання інвестору готових земельних ділянок для встановлення УЗЕ або юридичний супровід оформлення нової ділянки</p>
+						<p>Розробка бізнес-плану реалізації проєкту УЗЕ</p>
 					</div>
-					<div class="col-lg-6">
-						<div class="offers__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s" data-wow-duration="1.3s">
-							<div class="offers__icon">
-								<img src="img/ic_offers2.svg" alt="Техніко-економічні розрахунки та проєктування">
-							</div>
-							<div class="offers__title">Техніко-економічні розрахунки та проєктування</div>
-							<p>ТЕО і порівняння провідних виробників УЗЕ</p>
-							<p>Підбір оптимального обладнання та організація поставок в Україну</p>
-							<p>Проєктні роботи з будівництва об’єкта й приєднання до електричних мереж</p>
+					<div class="offers__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s" data-wow-duration="1.3s">
+						<div class="offers__icon">
+							<img src="img/ic_offers2.svg" alt="Техніко-економічні розрахунки та проєктування">
 						</div>
+						<div class="offers__title">Техніко-економічні розрахунки та проєктування</div>
+						<p>ТЕО і порівняння провідних виробників УЗЕ</p>
+						<p>Підбір оптимального обладнання та організація поставок в Україну</p>
+						<p>Проєктні роботи з будівництва об’єкта й приєднання до електричних мереж</p>
 					</div>
-					<div class="col-lg-6">
-						<div class="offers__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.3s">
-							<div class="offers__icon">
-								<img src="img/ic_offers3.svg" alt="Дозвільні документи та регуляторні заходи">
-							</div>
-							<div class="offers__title">Дозвільні документи та <br>регуляторні заходи</div>
-							<p>Отримання дозвільних документів на будівництво об’єкта</p>
-							<p>Ліцензування, сертифікація та укладення договорів з ОСР/ОСП</p>
+					<div class="offers__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.3s">
+						<div class="offers__icon">
+							<img src="img/ic_offers3.svg" alt="Дозвільні документи та регуляторні заходи">
 						</div>
+						<div class="offers__title">Дозвільні документи та <br>регуляторні заходи</div>
+						<p>Отримання дозвільних документів на будівництво об’єкта</p>
+						<p>Ліцензування, сертифікація та укладення договорів з ОСР/ОСП</p>
 					</div>
-					<div class="col-lg-6">
-						<div class="offers__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s" data-wow-duration="1.3s">
-							<div class="offers__icon">
-								<img src="img/ic_offers4.svg" alt="Інтеграція та реалізація">
-							</div>
-							<div class="offers__title">Інтеграція та реалізація</div>
-							<p>Послуги системного інтегратора</p>
-							<p>Виконання функцій EPC-контрактів (engineering, procurement, construction)</p>
-							<p>Повний інжиніринг і управління реалізацією проєкту</p>
+					<div class="offers__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s" data-wow-duration="1.3s">
+						<div class="offers__icon">
+							<img src="img/ic_offers4.svg" alt="Інтеграція та реалізація">
 						</div>
+						<div class="offers__title">Інтеграція та реалізація</div>
+						<p>Послуги системного інтегратора</p>
+						<p>Виконання функцій EPC-контрактів (engineering, procurement, construction)</p>
+						<p>Повний інжиніринг і управління реалізацією проєкту</p>
 					</div>
 				</div>
 			</div>
@@ -260,29 +254,41 @@
 				<div class="head-section fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.3s">
 					<h2 class="title-section">Можливості монетизації</h2>
 				</div>
-				<div class="row row_main">
-					<div class="col-lg-4 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.5s">
+				<div class="grid-main">
+					<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.5s">
 						<a href="#" class="item-card">
 							<span class="item-card__image">
-								<img src="img/card1.jpg" alt="Робота на ринку електроенергії">
+								<picture>
+									<source srcset="img/card1.avif" type="image/avif">
+									<source srcset="img/card1.webp" type="image/webp">
+									<img src="img/card1.jpg" alt="Робота на ринку електроенергії" width="425" height="280" loading="lazy">
+								</picture>
 							</span>
 							<span class="item-card__title">Робота на ринку електроенергії</span>
 							<span class="item-card__text">Участь в регулюванні частоти та купівлі-продажу електроенергії</span>
 						</a>
 					</div>
-					<div class="col-lg-4 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s" data-wow-duration="1.5s">
+					<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s" data-wow-duration="1.5s">
 						<a href="#" class="item-card">
 							<span class="item-card__image">
-								<img src="img/card2.jpg" alt="Балансування ВДЕ">
+								<picture>
+									<source srcset="img/card2.avif" type="image/avif">
+									<source srcset="img/card2.webp" type="image/webp">
+									<img src="img/card2.jpg" alt="Балансування ВДЕ" width="425" height="280" loading="lazy">
+								</picture>
 							</span>
 							<span class="item-card__title">Балансування ВДЕ</span>
 							<span class="item-card__text">Захист від штрафів і стабільність генерації</span>
 						</a>
 					</div>
-					<div class="col-lg-4 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.7s" data-wow-duration="1.5s">
+					<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.7s" data-wow-duration="1.5s">
 						<a href="#" class="item-card">
 							<span class="item-card__image">
-								<img src="img/card3.jpg" alt="Оптимізація витрат підприємств">
+								<picture>
+									<source srcset="img/card3.avif" type="image/avif">
+									<source srcset="img/card3.webp" type="image/webp">
+									<img src="img/card3.jpg" alt="Оптимізація витрат підприємств" width="425" height="280" loading="lazy">
+								</picture>
 							</span>
 							<span class="item-card__title">Оптимізація витрат підприємств</span>
 							<span class="item-card__text">Економія на різниці між низькими й піковими тарифами</span>
@@ -302,19 +308,23 @@
 
 		<section class="history">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
+				<div class="history__wrap">
+					<div>
 						<div class="history__main">
 							<div class="head-section">
 								<h2 class="title-section fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s" data-wow-duration="1.3s">Ми створюємо історію ринку energy storage в Україні</h2>
 							</div>
 							<div class="history__descr fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.7s" data-wow-duration="1.3s">IKNET був серед перших, хто вивів УЗЕ на промисловий рівень, і сьогодні масштабує технологію з передбачуваним результатом.</div>
 							<div class="history__image fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.9s" data-wow-duration="1.3s">
-								<img src="img/history.jpg" alt="Наш досвід в УЗЕ">
+								<picture>
+									<source srcset="img/history.avif" type="image/avif">
+									<source srcset="img/history.webp" type="image/webp">
+									<img src="img/history.jpg" alt="Наш досвід в УЗЕ" width="709" height="423" loading="lazy">
+								</picture>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6">
+					<div>
 						<div class="timeline">
 							<div class="timeline__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.3s">
 								<div class="timeline__year">2021</div>
@@ -341,7 +351,11 @@
 					</div>
 				</div>
 				<div class="history__image show-mob">
-					<img src="img/history2.jpg" alt="Наш досвід в УЗЕ">
+					<picture>
+						<source srcset="img/history2.avif" type="image/avif">
+						<source srcset="img/history2.webp" type="image/webp">
+						<img src="img/history2.jpg" alt="Наш досвід в УЗЕ" width="345" height="224" loading="lazy">
+					</picture>
 				</div>
 			</div>
 		</section>
@@ -352,8 +366,8 @@
 					<h2 class="title-section">IKNET — це команда з досвідом, експерністю та власним підходом до впровадження УЗЕ</h2>
 					<div class="descr-section">Наші сильні сторони, які допомагають реалізовувати проекти швидко та ефективно</div>
 				</div>
-				<div class="row row_main hidden-mob">
-					<div class="col-lg-3 col-md-4 col-sm-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.2s" data-wow-duration="1.5s">
+				<div class="advantages__wrap hidden-mob">
+					<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.2s" data-wow-duration="1.5s">
 						<div class="advantages__item">
 							<div class="advantages__icon">
 								<img src="img/ic_avd1.svg" alt="Досвід «перших»">
@@ -362,7 +376,7 @@
 							<p>Реалізували першу промислову систему зберігання енергії в Україні (2025, з ОККО).</p>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.4s" data-wow-duration="1.5s">
+					<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.4s" data-wow-duration="1.5s">
 						<div class="advantages__item">
 							<div class="advantages__icon">
 								<img src="img/ic_avd2.svg" alt="Інтеграційна експертиза">
@@ -371,7 +385,7 @@
 							<p>Втілюємо проєкти, де УЗЕ, генерація та автоматизація працюють як єдина система.</p>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.6s" data-wow-duration="1.5s">
+					<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.6s" data-wow-duration="1.5s">
 						<div class="advantages__item">
 							<div class="advantages__icon">
 								<img src="img/ic_avd3.svg" alt="Повний цикл інжинірингу">
@@ -380,7 +394,7 @@
 							<p>Беремо на себе все: від розрахунків і ТЕО до введення в експлуатацію та оптимізації витрат.</p>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.8s" data-wow-duration="1.5s">
+					<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.8s" data-wow-duration="1.5s">
 						<div class="advantages__item">
 							<div class="advantages__icon">
 								<img src="img/ic_avd4.svg" alt="Адаптація під бізнес-модель">
@@ -389,7 +403,7 @@
 							<p>Налаштовуємо рішення під конкретний об’єкт і економічні цілі.</p>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="1s" data-wow-duration="1.5s">
+					<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="1s" data-wow-duration="1.5s">
 						<div class="advantages__item">
 							<div class="advantages__icon">
 								<img src="img/ic_avd5.svg" alt="Мінімізація ризиків">
@@ -398,7 +412,7 @@
 							<p>Контролюємо технічні й фінансові ризики проєктів.</p>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-4 col-sm-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="1.2s" data-wow-duration="1.5s">
+					<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="1.2s" data-wow-duration="1.5s">
 						<div class="advantages__item">
 							<div class="advantages__icon">
 								<img src="img/ic_avd6.svg" alt="Прогнозований результат">
@@ -407,7 +421,7 @@
 							<p>Моделюємо економіку й забезпечуємо прозору окупність.</p>
 						</div>
 					</div>
-					<div class="col-lg-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="1.4s">
+					<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="1.4s">
 						<div class="advantages__item">
 							<div class="advantages__icon">
 								<img src="img/ic_avd7.svg" alt="Інноваційність">
@@ -487,8 +501,8 @@
 
 		<section class="about-us">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-5">
+				<div class="about-us__wrap">
+					<div>
 						<div class="about-us__main">
 							<div class="head-section">
 								<h2 class="title-section fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s" data-wow-duration="1.5s">Що таке УЗЕ і чому вони потрібні</h2>
@@ -500,7 +514,7 @@
 							<div class="about-us__info fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.9s" data-wow-duration="1.5s">Результат — економія, нові доходи та стабільність для бізнесу. </div>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div>
 						<div class="about-us__items">
 							<div class="about-us__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.5s">
 								<div class="about-us__icon">
@@ -528,11 +542,21 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div>
 						<div class="about-us__image fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.5s">
 							<picture>
+								<!-- Форматы для десктопа -->
+								<source srcset="img/about.avif" type="image/avif" media="(min-width: 992px)">
+								<source srcset="img/about.webp" type="image/webp" media="(min-width: 992px)">
 								<source srcset="img/about.jpg" media="(min-width: 992px)">
-								<img src="img/about_mob.jpg" alt="Що таке УЗЕ">
+
+								<!-- Форматы для мобильных -->
+								<source srcset="img/about_mob.avif" type="image/avif" media="(max-width: 991px)">
+								<source srcset="img/about_mob.webp" type="image/webp" media="(max-width: 991px)">
+								<source srcset="img/about_mob.jpg" media="(max-width: 991px)">
+
+								<!-- fallback -->
+								<img src="img/about.jpg" alt="Що таке УЗЕ" width="480" height="487" loading="lazy">
 							</picture>
 						</div>
 					</div>
@@ -542,26 +566,26 @@
 
 		<section class="joining">
 			<div class="container">
-				<div class="row align-items-end">
-					<div class="col-lg-6">
+				<div class="joining__wrap">
+					<div>
 						<div class="head-section">
 							<h2 class="title-section fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s" data-wow-duration="1.5s">Приєднати УЗЕ до мережі разом з IKNET — просто</h2>
 							<div class="descr-section fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.7s" data-wow-duration="1.5s">Ми супроводжуємо підключення УЗЕ у всіх категоріях.</div>
 						</div>
-						<div class="row row_main">
-							<div class="col-md-4 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.5s">
+						<div class="joining__steps">
+							<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.5s">
 								<div class="joining__step">
 									<div class="joining__count">01</div>
 									<p>Вибір локації та визначення схеми приєднання</p>
 								</div>
 							</div>
-							<div class="col-md-4 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s" data-wow-duration="1.5s">
+							<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s" data-wow-duration="1.5s">
 								<div class="joining__step">
 									<div class="joining__count">02</div>
 									<p>Отримання технічних умов приєднання </p>
 								</div>
 							</div>
-							<div class="col-md-4 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.7s" data-wow-duration="1.5s">
+							<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.7s" data-wow-duration="1.5s">
 								<div class="joining__step">
 									<div class="joining__count">03</div>
 									<p>Підключення УЗЕ до мережі</p>
@@ -569,7 +593,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.5s">
+					<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.5s">
 						<div class="table-main">
 							<table>
 								<thead>
@@ -620,8 +644,8 @@
 					<div class="descr-section">Ми підбираємо рішення так, щоб технічні характеристики напряму працювали на ефективність бізнесу. Ми не прив’язані до одного виробника й підбираємо оптимальне рішення з перевірених технологій.</div>
 				</div>
 				<div class="parametrs__wrapper">
-					<div class="row">
-						<div class="col-lg-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.5s">
+					<div class="parametrs__grid">
+						<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.5s">
 							<div class="parametrs__text">
 								<p><i>Згідно з Законом України від 15.02.2022 № 2046-ІX та усіх чинних законодавчих актів України в сфері розвитку промислової акумуляції на даний час використовують саме це поняття:</i></p>
 								<p><strong>Установка зберігання енергії (УЗЕ)</strong> - електроустановка, де відбувається зберігання енергії.</p>
@@ -630,7 +654,7 @@
 								<p>Поняття Battery Energy Storage System (ВЕSS) або Energy Storage використовується в європейських країнах та відповідає УЗЕ. </p>
 							</div>
 						</div>
-						<div class="col-lg-6 order-mob">
+						<div class="order-mob">
 							<div class="parametrs__item fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.5s">
 								<div class="parametrs__value">Ємність (кВт·год / МВт·год)</div>
 								<p>скільки енергії можна накопичити й віддати</p>
@@ -682,7 +706,7 @@
 					<h2 class="title-section">Світові технології, адаптовані для України</h2>
 					<div class="descr-section">IKNET інтегрує рішення лише перевірених компаній — лідерів ринку energy storage</div>
 				</div>
-				<div class="partners__wrap zoomIn wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="2s">
+				<div class="partners__wrap fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="2s">
 					<div class="partners__line">
 						<div class="partners__item">
 							<img src="img/ic_partner1.svg" alt="alt">
@@ -725,13 +749,17 @@
 		<section class="chief">
 			<div class="container">
 				<div class="chief__block">
-					<div class="row align-items-center">
-						<div class="col-lg-6 zoomIn wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.5s">
+					<div class="chief__wrap">
+						<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.5s">
 							<div class="chief__image">
-								<img src="img/chief.jpg" alt="Юрій Подоляк">
+								<picture>
+									<source srcset="img/chief.avif" type="image/avif">
+									<source srcset="img/chief.webp" type="image/webp">
+									<img src="img/chief.jpg" alt="Юрій Подоляк" width="653" height="350" loading="lazy">
+								</picture>
 							</div>
 						</div>
-						<div class="col-lg-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s" data-wow-duration="1.5s">
+						<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s" data-wow-duration="1.5s">
 							<div class="chief__content">
 								<div class="chief__title">Ми знаємо, як працює енергетика зсередини. </div>
 								<p><strong>Наш підхід — це інжиніринг</strong>, у якому немає випадковостей: від першого розрахунку до запуску системи ми відповідаємо за кожен крок.</p>
@@ -751,39 +779,43 @@
 
 		<section class="numbers">
 			<div class="container">
-				<div class="row row_main">
-					<div class="col-lg-4 col-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.5s">
+				<div class="numbers__wrap">
+					<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.5s">
 						<div class="numbers__item">
 							<h3 class="numbers__value"><span data-from="0" data-to="80">0</span>+</h3>
 							<p>технічних due diligence для енергетичних проєктів</p>
 						</div>
 					</div>
-					<div class="col-lg-4 col-12 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s" data-wow-duration="1.5s">
+					<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s" data-wow-duration="1.5s">
 						<div class="numbers__item">
 							<div class="numbers__value"><span data-from="0" data-to="540">0</span>+ проєктів</div>
 							<p>у традиційній та відновлюваній енергетиці</p>
 						</div>
 					</div>
-					<div class="col-lg-4 col-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.7s" data-wow-duration="1.5s">
+					<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.7s" data-wow-duration="1.5s">
 						<div class="numbers__item">
 							<h3 class="numbers__value"><span data-from="0" data-to="6000">0</span>+ МВт</h3>
 							<p>реалізували приєднання об’єктів до зовнішніх електричних мереж</p>
 						</div>
 					</div>
-					<div class="col-lg-4 col-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.9s" data-wow-duration="1.5s">
+					<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.9s" data-wow-duration="1.5s">
 						<div class="numbers__item">
 							<h3 class="numbers__value"><span data-from="0" data-to="20">0</span>+ МВт</h3>
 							<p>Спільно з групою ОККО реалізували перший промисловий УЗЕ в Україні</p>
 						</div>
 					</div>
-					<div class="col-lg-4 col-6 hidden-mob fadeInUp wow" data-wow-iteration="1" data-wow-delay="1.1s" data-wow-duration="1.5s">
+					<div class="hidden-mob fadeInUp wow" data-wow-iteration="1" data-wow-delay="1.1s" data-wow-duration="1.5s">
 						<div class="numbers__item">
 							<div class="numbers__image">
-								<img src="img/numbers.jpg" alt="alt">
+								<picture>
+									<source srcset="img/numbers.avif" type="image/avif">
+									<source srcset="img/numbers.webp" type="image/webp">
+									<img src="img/numbers.jpg" alt="alt" width="464" height="224" loading="lazy">
+								</picture>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-6 fadeInUp wow" data-wow-iteration="1" data-wow-delay="1.3s" data-wow-duration="1.5s">
+					<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="1.3s" data-wow-duration="1.5s">
 						<div class="numbers__item">
 							<h3 class="numbers__value"><span data-from="0" data-to="1000">0</span>+ МВт</h3>
 							<p>прогнозуємо виробіток електроенергії для об’єктів такої потужності</p>
@@ -798,8 +830,8 @@
 				<div class="head-section fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.3s">
 					<h2 class="title-section">Новини</h2>
 				</div>
-				<div class="row hidden-mob">
-					<div class="col-lg-4 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.5s">
+				<div class="grid-main">
+					<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.5s">
 						<div class="item-card">
 							<a href="#" class="item-card__image">
 								<img src="img/news1.jpg" alt="Топ-10 атомних електростанцій Європи (2025)">
@@ -808,7 +840,7 @@
 							<a href="#" class="link-main">Дивитись матеріал</a>
 						</div>
 					</div>
-					<div class="col-lg-4 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s" data-wow-duration="1.5s">
+					<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s" data-wow-duration="1.5s">
 						<div class="item-card">
 							<a href="#" class="item-card__image">
 								<img src="img/news2.jpg" alt="Топ-10 установок зберігання енергії (BESS) у Європі за потужністю (2025)">
@@ -817,7 +849,7 @@
 							<a href="#" class="link-main">Дивитись матеріал</a>
 						</div>
 					</div>
-					<div class="col-lg-4 fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.7s" data-wow-duration="1.5s">
+					<div class="fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.7s" data-wow-duration="1.5s">
 						<div class="item-card">
 							<a href="#" class="item-card__image">
 								<img src="img/news3.jpg" alt="Топ-10 найбільших вітрових електростанцій у Європі (2025)">
@@ -870,44 +902,32 @@
 				</div>
 				<div class="consultation__form fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.5s" data-wow-duration="1.5s">
 					<form>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="item-form">
-									<input type="text" placeholder="Імʼя" required>
-								</div>
+						<div class="consultation__grid">
+							<div class="item-form">
+								<input type="text" placeholder="Імʼя" required>
 							</div>
-							<div class="col-md-6">
-								<div class="item-form">
-									<input type="tel" placeholder="Номер телефону" class="input-phone" inputmode="numeric" required>
-								</div>
+							<div class="item-form">
+								<input type="tel" placeholder="Номер телефону" class="input-phone" inputmode="numeric" required>
 							</div>
-							<div class="col-md-6">
-								<div class="item-form">
-									<input type="email" placeholder="Email" inputmode="email" required>
-								</div>
+							<div class="item-form">
+								<input type="email" placeholder="Email" inputmode="email" required>
 							</div>
-							<div class="col-md-12">
-								<div class="item-form">
-									<select>
-										<option value="1">Оберіть режим роботи УЗЕ</option>
-										<option value="2">Підтримка частоти</option>
-										<option value="3">Для роботи зі споживачами</option>
-										<option value="4">Для роботи з генерацією</option>
-										<option value="5">Для продажу на ринку (РДН)</option>
-									</select>
-								</div>
+							<div class="item-form">
+								<select>
+									<option value="1">Оберіть режим роботи УЗЕ</option>
+									<option value="2">Підтримка частоти</option>
+									<option value="3">Для роботи зі споживачами</option>
+									<option value="4">Для роботи з генерацією</option>
+									<option value="5">Для продажу на ринку (РДН)</option>
+								</select>
 							</div>
-							<div class="col-md-6">
-								<div class="item-form item-form_power">
-									<input type="text" placeholder="Потужність" required>
-									<div class="item-form__descr">(кВт / МВт)</div>
-								</div>
+							<div class="item-form item-form_power">
+								<input type="text" placeholder="Потужність" required>
+								<div class="item-form__descr">(кВт / МВт)</div>
 							</div>
-							<div class="col-md-6">
-								<div class="item-form item-form_capacity">
-									<input type="text" placeholder="Ємність" required>
-									<div class="item-form__descr">(кВт / МВт)</div>
-								</div>
+							<div class="item-form item-form_capacity">
+								<input type="text" placeholder="Ємність" required>
+								<div class="item-form__descr">(кВт / МВт)</div>
 							</div>
 						</div>
 						<button class="btn-main" type="submit">Відправити</button>
@@ -939,15 +959,15 @@
 				</div>
 			</div>
 			<div class="container fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s" data-wow-duration="1.5s">
-				<div class="row">
-					<div class="col-lg-3">
+				<div class="footer__wrap">
+					<div>
 						<a href="#" class="footer__logo">
 							<img src="img/logo.svg" alt="iknet">
 						</a>
 						<div class="footer__descr">ІКНЕТ – експерт в реалізації проектів альтернативної та традиційної енергетики</div>
 						<a href="#" class="footer__link">Докладніше →</a>
 					</div>
-					<div class="col-lg-3 col-6">
+					<div>
 						<div class="footer__title">Карта сайту</div>
 						<nav>
 							<ul class="footer__nav">
@@ -959,7 +979,7 @@
 							</ul>
 						</nav>
 					</div>
-					<div class="col-lg-3 col-6">
+					<div>
 						<div class="footer__title">Послуги</div>
 						<nav>
 							<ul class="footer__nav">
@@ -969,7 +989,7 @@
 							</ul>
 						</nav>
 					</div>
-					<div class="col-lg-3">
+					<div>
 						<div class="footer__title">Контакти</div>
 						<div class="footer__location">03113, Україна, м. Київ вул. <br>Грушецька 9А, оф. 102</div>
 						<div class="footer__contact">Тел: <a href="tel:+380445910873">+38 (044) 591-08-73</a></div>
@@ -992,12 +1012,11 @@
 	</div>
 
 
-	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
-	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
-	<script src="libs/animate/wow.min.js"></script>
-	<script src="libs/animate/animate-css.js"></script>
-	<script src="libs/mask/jquery.maskedinput.js"></script>
-	<script src="libs/jquery-spincrement/jquery.spincrement.min.js"></script>
-	<script src="js/common.js?ver=1.9"></script>
+	<script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
+	<script src="libs/slick-1.5.9/slick/slick.min.js" defer></script>
+	<script src="libs/animate/wow.min.js" defer></script>
+	<script src="libs/mask/jquery.maskedinput.min.js" defer></script>
+	<script src="libs/jquery-spincrement/jquery.spincrement.min.js" defer></script>
+	<script src="js/common.js?ver=1.10" defer></script>
 </body>
 </html>
