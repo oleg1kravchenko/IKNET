@@ -67,6 +67,19 @@ $(document).ready(function () {
 		}
 	});
 
+	//open modal
+	$('.open-modal').on('click', function (e) {
+		e.preventDefault();
+		var targetModat = $(this).attr('href');
+		$(targetModat).fadeIn(200);
+		$("body").addClass("body_modal");
+	});
+
+		$('.modal-overlay, .modal-close').on('click', function () {
+		$(".modal-block").fadeOut(200);
+		$("body").removeClass("body_modal");
+	});
+
 		//search
 		$(".open-search").click(function () {
 			if ($(".search-wrap").hasClass("active")) {
