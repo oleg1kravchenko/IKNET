@@ -1735,10 +1735,13 @@
         margin-bottom: 30px;
     }
     .modal-close {
-        width: 24px;
-        height: 24px;
-        top: 24px;
-        right: 24px;
+        width: 44px;
+        height: 44px;
+        top: 42px;
+        right: 15px;
+        background-size: 20px;
+        position: fixed;
+        z-index: 10;
     }
     .info-main {
         padding: 18px;
