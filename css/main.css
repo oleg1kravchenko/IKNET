@@ -2183,3 +2183,11 @@ footer .animation .footer_city .light_window.n4 {
 	pointer-events: none;
 background: linear-gradient(0deg, #FDFDFD 39.52%, rgba(253, 253, 253, 0) 100%);
 }
+
+.consultation__grid {
+	display: block;
+}
+.footer .animation,
+.consultation {
+	background-color: #C6FF80;
+}
