@@ -2431,6 +2431,7 @@ footer .animation .footer_city .light_window.n4 {
 	border-radius: 25px;
 	box-shadow: 0 15px 30px 0 rgba(171, 201, 190, 0.1);
 	background: #fff;
+	transition: all 0.3s;
 	position: relative;
 }
 .item-cycle p {
@@ -2457,6 +2458,7 @@ footer .animation .footer_city .light_window.n4 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: all 0.3s;
 }
 .item-cycle__title {
 	font-size: 24px;
@@ -2481,14 +2483,6 @@ footer .animation .footer_city .light_window.n4 {
 .item-cycle--5 {
 	margin: 0 auto;
 }
-.item-cycle--1,
-.item-cycle--4 {
-	background: #EFFFE0;
-}
-.item-cycle--1 .item-cycle__count,
-.item-cycle--4 .item-cycle__count {
-	background: #fff;
-}
 .item-cycle::after {
 	position: absolute;
 	display: block;
@@ -2496,6 +2490,7 @@ footer .animation .footer_city .light_window.n4 {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
+	pointer-events: none;
 }
 .item-cycle--1::after {
 	width: 435px;

@@ -2323,6 +2323,12 @@
     .item-direction:hover .item-direction__arrow svg {
         transform: rotate(45deg);
     }
+    .item-cycle:hover {
+        background: #EFFFE0;
+    }
+    .item-cycle:hover .item-cycle__count {
+        background: #fff;
+    }
 }
 
 /*mobile hovers*/
