@@ -1,5 +1,19 @@
 $(document).ready(function () {
 
+		$('.slider-hero').slick({
+		arrows: false,
+		dots: true,
+		infinite: true,
+		touchThreshold: 1000,
+		autoplay: true,
+  		autoplaySpeed: 4000,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		appendDots: $(".controls-hero .container"),
+		prevArrow: '<div class="slick-prev slick-arrow"><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><div/>',
+	});
+
 	//прилипающие меню
 	var $menu = $(".header");
 	$(window).scroll(function () {
