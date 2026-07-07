@@ -582,7 +582,7 @@
     .hero__title {
         font-size: 44px;
         margin-bottom: 17px;
-        max-width: 878px;
+        max-width: 838px;
     }
     .hero__descr {
         font-size: 21px;
@@ -613,13 +613,11 @@
     }
     .item-process {
         padding: 25px;
-        padding-top: 39px;
-        min-height: 270px;
         font-size: 16px;
     }
     .item-process__value {
         font-size: 58px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .item-process__value span {
         font-size: 36px;
@@ -659,7 +657,13 @@
         gap: 12px;
     }
     .about {
-        padding-bottom: 120px;
+        padding: 120px 0;
+    }
+    .partners {
+        padding-bottom: 0;
+    }
+    .partners__items-unit {
+        padding: 0 15px;
     }
 }
 
@@ -867,9 +871,6 @@
     .partners__line {
         gap: 55px;
     }
-    .partners {
-        padding-bottom: 100px;
-    }
 
     .chief {
         padding-bottom: 100px;
@@ -1014,7 +1015,7 @@
     .hero__title {
         font-size: 37px;
         margin-bottom: 15px;
-        max-width: 720px;
+        max-width: 704px;
     }
     .hero__descr {
         font-size: 18px;
@@ -1054,7 +1055,7 @@
     }
     .item-process__value {
         font-size: 48px;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
     }
     .item-process__value span {
         font-size: 29px;
@@ -1131,7 +1132,7 @@
         right: 0;
     }
     .about {
-        padding-bottom: 100px;
+        padding: 100px 0;
     }
     .consultation__wrap {
         gap: 20px;
@@ -2078,10 +2079,14 @@
         max-width: 100%;
     }
     .slider-hero__item {
-        padding-top: 69px;
+        padding-top: 85px;
         min-height: 560px;
-        background-color: #fbfaf9;
+        
         position: relative;
+    }
+    .hero {
+        background-color: #fbfaf9;
+        overflow: hidden;
     }
     .hero__image img {
         object-position: 85% 50%;
@@ -2259,6 +2264,13 @@
     }
     .consultation {
         padding-bottom: 54px;
+    }
+    .slider-marquee .slick-list {
+        overflow: visible;
+    }
+    .partners {
+        padding-bottom: 0;
+        padding-top: 60px;
     }
 }
 
