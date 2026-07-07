@@ -2272,6 +2272,18 @@
         padding-bottom: 0;
         padding-top: 60px;
     }
+    .partners__items {
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .partners__items-unit img {
+        max-height: 36px;
+    }
+    .partners__items-unit {
+        padding: 0;
+        max-width: 46%;
+    }
 }
 
 /* Small Devices, Tablets */

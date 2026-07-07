@@ -2677,6 +2677,7 @@ footer .animation .footer_city .light_window.n4 {
 .partners__items-unit img {
 	max-width: 100%;
 	height: auto;
+	margin: 0 auto;
 }
 .partners {
 	padding-bottom: 0;
