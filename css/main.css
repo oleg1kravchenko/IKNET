@@ -2198,6 +2198,7 @@ footer .animation .footer_city .light_window.n4 {
 	z-index: 1;
 	position: relative;
 }
+.hero__content,
 .slider-hero__item {
 	padding-top: 195px;
 	min-height: 800px;
