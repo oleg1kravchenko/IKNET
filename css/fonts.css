@@ -8,6 +8,16 @@
 	font-display: swap;
 }
 
+/** Montserrat Medium **/
+@font-face {
+	font-family: "Montserrat";
+	font-weight: 500;
+	font-style: normal;
+	src: url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+		url("../fonts/Montserrat-Medium.woff") format("woff");
+	font-display: swap;
+}
+
 /** Montserrat SemiBold **/
 @font-face {
 	font-family: "Montserrat";
