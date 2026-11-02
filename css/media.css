@@ -2824,7 +2824,7 @@ line-height: 150%;
         margin-bottom: 0;
     }
     .item-info__image img {
-        border-radius: 16px;
+        border-radius: 16px; 
     }
     .reduction-consumption {
         padding-bottom: 40px;
