@@ -3211,6 +3211,7 @@ font-weight: 500;
 	align-items: center;
 	justify-content: space-between;
 }
+.box-graphics__image svg,
 .box-graphics__image img {
 	max-width: 100%;
 	height: auto;
@@ -3246,6 +3247,14 @@ color: #454545;
 	box-shadow: 0 15px 30px 0 rgba(171, 201, 190, 0.1);
 	background: #fff;
 	border: 1px solid #D8D8D8;
+	transition: all 0.3s;
+}
+.box-main:hover {
+	box-shadow: 0 15px 30px 0 rgba(171, 201, 190, 0.3);
+    background: #C6FF80;
+}
+.box-main:hover .box-main__icon {
+	background: #fff;
 }
 .box-main__head {
 	margin-bottom: 20px;
@@ -3262,6 +3271,7 @@ color: #454545;
 	align-items: center;
 	justify-content: center;
 	flex: none;
+	transition: all 0.3s;
 }
 .box-main__icon img {
 	max-width: 100%;
@@ -3286,7 +3296,7 @@ font-weight: 600;
 	padding-bottom: 150px;
 }
 .cta-main {
-	min-height: 598px;
+	min-height: 750px;
 	position: relative;
 	background: #C6FF80;
 	color: #282B29;
@@ -3311,7 +3321,7 @@ font-weight: 600;
 }
 .cta-main__image {
 	width: 50%;
-	height: 100%;
+	height: 570px;
 	top: 0;
 	right: 0;
 	position: absolute;
@@ -3341,6 +3351,7 @@ font-weight: 600;
 	z-index: -1;
 	background: #3a3a3a;
 }
+.box-graphics__scale svg,
 .box-graphics__scale img {
 	width: 100%;
 	height: auto;
@@ -3348,3 +3359,71 @@ font-weight: 600;
 .box-graphics__scale {
 	margin-bottom: 52px;
 } 
+
+.item-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .4s ease, transform .4s ease;
+}
+
+.item-animation.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.rect-fill {
+    transform: scaleX(0);
+    transform-box: fill-box;
+    transform-origin: left center;
+    transition: transform 1.2s ease;
+}
+
+.item-animation.is-visible .rect-fill {
+    transform: scaleX(1);
+}
+
+.chart-axes {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    transition: stroke-dashoffset 1.5s ease;
+}
+.chart-area {
+    clip-path: inset(100% 0 0 0);
+    transition: clip-path 1.5s cubic-bezier(.22, 1, .36, 1);
+}
+.chart-area {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    transition:
+        clip-path 1.5s cubic-bezier(.22, 1, .36, 1),
+        stroke-dashoffset 2s ease;
+}
+.chart-line {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    transition: stroke-dashoffset 1s ease;
+}
+.chart-bottom-gradient {
+    opacity: 0;
+    transition: opacity 1.2s ease;
+}
+.chart-label {
+    opacity: 0;
+    transition: opacity .7s ease;
+}
+.box-graphics.is-visible .chart-axes {
+    stroke-dashoffset: 0;
+}
+.box-graphics.is-visible .chart-area {
+    clip-path: inset(0 0 0 0);
+    stroke-dashoffset: 0;
+}
+.box-graphics.is-visible .chart-line {
+    stroke-dashoffset: 0;
+}
+.box-graphics.is-visible .chart-bottom-gradient {
+    opacity: 1;
+}
+.box-graphics.is-visible .chart-label {
+    opacity: 1;
+}

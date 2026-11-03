@@ -212,6 +212,79 @@ $(document).ready(function () {
 
 });
 
+$(function () {
+    const box = document.querySelector('.box-graphics');
+
+    if (!box) return;
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+
+                const items = $(entry.target).find('.item-animation');
+
+                items.each(function (index) {
+                    const item = $(this);
+
+                    setTimeout(() => {
+                        item.addClass('is-visible');
+                    }, index * 200);
+                });
+
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    observer.observe(box);
+});
+
+$(function () {
+
+    const chart = document.querySelector('.box-graphics--chart');
+
+    if (!chart) return;
+
+    const observer = new IntersectionObserver((entries, observer) => {
+
+        entries.forEach(entry => {
+
+            if (!entry.isIntersecting) return;
+
+            const $chart = $(entry.target);
+
+            // Оси
+            $chart.addClass('is-visible');
+
+            // Основные области
+            setTimeout(() => {
+                $chart.find('.chart-area').addClass('is-visible');
+            }, 300);
+
+            // Линии
+            setTimeout(() => {
+                $chart.find('.chart-line').addClass('is-visible');
+            }, 900);
+
+            // Подписи
+            setTimeout(() => {
+                $chart.find('.chart-label').addClass('is-visible');
+            }, 1300);
+
+            observer.unobserve(entry.target);
+
+        });
+
+    }, {
+        threshold: 0.2
+    });
+
+    observer.observe(chart);
+
+});
+
 
 /*polifyl*/
 /*! npm.im/object-fit-images 3.2.4 */
@@ -219,3 +292,4 @@ var objectFitImages = function () { "use strict"; function t(t, e) { return "dat
 
 //animate js
 (function ($) { $.fn.animated = function (inEffect, outEffect) { $(this).css("opacity", "0").addClass("animated").waypoint(function (dir) { if (dir === "down") { $(this).removeClass(outEffect).addClass(inEffect).css("opacity", "1") } else { $(this).removeClass(inEffect).addClass(outEffect).css("opacity", "1") } }, { offset: "80%" }).waypoint(function (dir) { if (dir === "down") { $(this).removeClass(inEffect).addClass(outEffect).css("opacity", "1") } else { $(this).removeClass(outEffect).addClass(inEffect).css("opacity", "1") } }, { offset: -$(window).height() }) } })(jQuery)
+	

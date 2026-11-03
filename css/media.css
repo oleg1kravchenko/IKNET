@@ -928,7 +928,10 @@
         padding-top: 76px;
     }
     .cta-main {
-        min-height: 510px;
+        min-height: 670px;
+    }
+    .cta-main__image {
+        height: 510px;
     }
     .box-graphics__scale {
         margin-bottom: 30px;
@@ -1558,7 +1561,10 @@
         padding-top: 70px;
     }
     .cta-main {
-        min-height: 440px;
+        min-height: 560px;
+    }
+    .cta-main__image {
+        height: 440px;
     }
 }
 
@@ -3072,6 +3078,9 @@
     }
     .cta-main+.footer::before {
         top: 15px;
+    }
+    .cta-main {
+        min-height: initial;
     }
 }
 
