@@ -3385,18 +3385,18 @@ font-weight: 600;
 .chart-axes {
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
-    transition: stroke-dashoffset 1.5s ease;
+    transition: stroke-dashoffset 2.5s ease;
 }
 .chart-area {
     clip-path: inset(100% 0 0 0);
-    transition: clip-path 1.5s cubic-bezier(.22, 1, .36, 1);
+    transition: clip-path 2.5s cubic-bezier(.22, 1, .36, 1);
 }
 .chart-area {
     stroke-dasharray: 2000;
     stroke-dashoffset: 2000;
     transition:
-        clip-path 1.5s cubic-bezier(.22, 1, .36, 1),
-        stroke-dashoffset 2s ease;
+        clip-path 2.5s cubic-bezier(.22, 1, .36, 1),
+        stroke-dashoffset 4s ease;
 }
 .chart-line {
     stroke-dasharray: 200;
@@ -3405,11 +3405,11 @@ font-weight: 600;
 }
 .chart-bottom-gradient {
     opacity: 0;
-    transition: opacity 1.2s ease;
+    transition: opacity 3.2s ease;
 }
 .chart-label {
     opacity: 0;
-    transition: opacity .7s ease;
+    transition: opacity 3.7s ease;
 }
 .box-graphics.is-visible .chart-axes {
     stroke-dashoffset: 0;
