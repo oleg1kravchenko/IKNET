@@ -271,7 +271,7 @@ $(function () {
             // Подписи
             setTimeout(() => {
                 $chart.find('.chart-label').addClass('is-visible');
-            }, 1300);
+            }, 2000);
 
             observer.unobserve(entry.target);
 
