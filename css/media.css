@@ -3080,7 +3080,11 @@
         top: 15px;
     }
     .cta-main {
+        padding-bottom: 130px;
         min-height: initial;
+    }
+    .cta-main + .footer .animation {
+        background-color: #C6FF80;
     }
 }
 
